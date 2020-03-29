@@ -111,6 +111,20 @@ class TileSchema
 end
 ```
 
+#### Content type formatting
+
+This method checks the path and changes the content type to JSON if it is a request to the API. This allows the homepage to be displayed correctly as HTML.
+
+```ruby
+before do
+  pass if request.path_info.split('/')[1] != "api"
+
+  response.headers['Access-Control-Allow-Origin'] = '*'
+  content_type :json
+end
+```
+
+
 ### Features
 * Read: Tile features and images for all 72 tiles in the base game
 * Tile schema created to convert Ruby objects into JSON
