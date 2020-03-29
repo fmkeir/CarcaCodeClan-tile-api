@@ -31,7 +31,7 @@ ruby server.rb
 
 ### Tile Structure
 
-<img src="./public/images/readme/castle3.jpg" height="200" alt="Example Output showing data structure and unique tiles" style="margin: 0 10px 10px 0" align="left"/>
+<img src="./public/images/readme/castle3_road_shield.jpg" height="200" alt="Example Output showing data structure and unique tiles" style="margin: 0 10px 10px 0" align="left"/>
 
 The tiles have an array of sides structured [top, right, bottom, left] to allow tile placement logic and rotation to occur.
 
@@ -43,17 +43,17 @@ imageURL contains a link to a hosted image for use in the game.
 
 ```JSON
 {
-	"id": 80,
-	"sides": [
+	"id": 85,
+		"sides": [
 		"castle",
 		"castle",
-		"grass",
+		"road",
 		"castle"
 	],
 	"centre": "",
-	"hasJunction": false,
-	"hasShield": false,
-	"imageURL": "https://carcacodeclan.files.wordpress.com/2020/03/castle3.jpg"
+	"hasJunction": true,
+	"hasShield": true,
+	"imageURL": "https://carcacodeclan.files.wordpress.com/2020/03/castle3_road_shield.jpg"
 }
 ```
 
