@@ -31,11 +31,13 @@ ruby server.rb
 
 ### Tile Structure
 
-The tiles have an array of sides structured [top, right, bottom, left] to allow tile placement logic to occur. This structure can also be used to allow rotation of the tiles; by moving the last position in the array to the first position.
+<img src="./public/images/readme/castle3.jpg" height="200" alt="Example Output showing data structure and unique tiles" style="margin: 0 10px 10px 0" align="left"/>
+
+The tiles have an array of sides structured [top, right, bottom, left] to allow tile placement logic and rotation to occur.
 
 Each tile has a centre attribute which is mostly left empty. In the base game in it used for denoting a tile containing a monastery.
 
-hasJunction can be used to determine if a road tile contains an end point. This can be either a road junction or termination at a castle/monastery. Similarly hasShield can be used for castle scoring.
+hasJunction and hasShield can be used for scoring. Determines whether a road is terminated or a castle contains a shield.
 
 imageURL contains a link to a hosted image for use in the game.
 
