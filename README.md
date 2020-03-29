@@ -71,7 +71,7 @@ Method:
 
 Method used in the seeds.rb file:
 
-```
+```ruby
 tile0 = Tile.new({
   "side_0" => "grass",
   "side_1" => "grass",
@@ -87,7 +87,7 @@ tile0.recurring_save 4
 #### Tile Schema
 A tile schema is used to convert the Ruby tile objects into JSON. The methods allow for converting a single tile (SHOW) and multiple tiles (GET).
 
-```
+```ruby
 class TileSchema
   def self.format(tile)
     return tile_hash = {
