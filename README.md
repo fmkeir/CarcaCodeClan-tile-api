@@ -8,7 +8,7 @@ We built this API to host and share the game tiles created for our Vue.js [Carca
 The API was built with Ruby, Sinatra, and PostgreSQL using RESTful routes (GET and SHOW). The tiles are added to the database using a server side seeds file. Shown below is the output for a GET request containing the 72 tiles in the base game with a few example tiles.
 
 
-<img src="./public/images/readme/API_output.png" height="600" alt="Example Output showing data structure and unique tiles" />
+<img src="./public/readme_images/API_output.png" height="600" alt="Example Output showing data structure and unique tiles" />
 
 ### Getting started
 
@@ -31,7 +31,7 @@ ruby server.rb
 
 ### Tile Structure
 
-<img src="./public/images/readme/castle3_road_shield.jpg" height="200" alt="Example Output showing data structure and unique tiles" style="margin: 0 10px 10px 0" align="left"/>
+<img src="./public/readme_images/castle3_road_shield.jpg" height="200" alt="Example Output showing data structure and unique tiles" style="margin: 0 10px 10px 0" align="left"/>
 
 The tiles have an array of sides structured [top, right, bottom, left] to allow tile placement logic and rotation to occur.
 

@@ -1,7 +1,7 @@
 require_relative '../db/sql_runner'
 
 class Tile
-  attr_reader :id, :centre, :has_junction, :has_shield, :has_castle_split, :image_url
+  attr_reader :id, :centre, :has_junction, :has_shield, :image_url
 
   def initialize options
     @id = options['id'].to_i() if options['id']
@@ -9,7 +9,6 @@ class Tile
     @centre = options['centre']
     @has_junction = options['has_junction']
     @has_shield = options['has_shield']
-    @has_castle_split = options['has_castle_split']
     @image_url = options['image_url']
   end
 
