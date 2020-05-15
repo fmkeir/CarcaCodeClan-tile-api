@@ -82,7 +82,7 @@ tile0 = Tile.new({
   "centre" => "monastery",
   "has_junction" => true,
   "has_shield" => false,
-  "image_url" => "https://carcacodeclan.files.wordpress.com/2020/03/monastery.jpg"
+  "image_url" => "https://carcacodeclan-tile-api.herokuapp.com/assets/monastery.jpg"
   })
 tile0.recurring_save 4
 ```
