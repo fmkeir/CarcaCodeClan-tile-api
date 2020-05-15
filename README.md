@@ -43,8 +43,8 @@ imageURL contains a link to a hosted image for use in the game.
 
 ```JSON
 {
-	"id": 85,
-		"sides": [
+	"id": 13,
+	"sides": [
 		"castle",
 		"castle",
 		"road",
@@ -53,7 +53,7 @@ imageURL contains a link to a hosted image for use in the game.
 	"centre": "",
 	"hasJunction": true,
 	"hasShield": true,
-	"imageURL": "https://carcacodeclan.files.wordpress.com/2020/03/castle3_road_shield.jpg"
+	"imageURL": "https://carcacodeclan-tile-api.herokuapp.com/assets/castle3_road_shield.jpg"
 }
 ```
 
