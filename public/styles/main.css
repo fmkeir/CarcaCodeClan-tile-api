@@ -10,10 +10,12 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 0 0 0.5rem rgb(87, 85, 85),
-                0 0 0.25rem rgb(35, 226, 99);
     text-align: center;
     padding: 0.75rem 0;
+    overflow-x: hidden;
+    white-space: nowrap;
+    box-shadow: 0 0 0.5rem rgb(87, 85, 85),
+                0 0 0.25rem rgb(35, 226, 99);
 }
   
 nav a {
@@ -57,11 +59,11 @@ p.code {
 p.address {
     text-align: center;
     font-weight: bold;
+    white-space: nowrap;
+    overflow-x: scroll;
     background-color: darkgrey;
     padding: .5rem 1rem;
     margin: 1rem 0.5rem;
-    white-space: nowrap;
-    overflow-x: scroll;
     max-width: 25rem;
 }
 
@@ -75,8 +77,30 @@ img.tile-image {
     height: 200px;
 } 
 
-/* @media (prefers-color-scheme: dark) {
-    nav a {
-        color: red;
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: #283149;
     }
-} */
+
+    nav {
+        box-shadow: 0 0 0.5rem rgb(87, 85, 85),
+                    0 0 0.25rem rgb(30, 114, 139);
+    }
+
+    nav a {
+        color: #77abb7;;
+    }
+
+    main {
+        color: #77abb7;
+    }
+
+    p.address {
+        background-color: #254b62;
+        color: #96d0dd;
+    }
+    
+    p b {
+        color: #96d0dd;
+    }
+}
