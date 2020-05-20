@@ -1,1 +1,85 @@
-<h1>API Description will go here</h1>
+
+<nav>
+    <a href="/api/v1/tiles">Tiles</a>
+    <a href="https://carcacodeclan.netlify.app/">CarcaCodeClan game</a>
+    <a href="https://github.com/fmkeir/CarcaCodeClan_tile_api">API Github</a>
+    <a href="https://github.com/fmkeir/CarcaCodeClan">Game Github</a>
+</nav>
+
+<main>
+    <section id="intro">
+    <h2>CarcaCodeClan Tile API</h2>
+    <p> An API to get details and images of the tiles from the base game of Carcassonne. </p><br>
+    <p>All 72 tiles are included as individual tiles and can be fetched using: </p>
+    <div class="center">
+    <p class="address">https://carcacodeclan-tile-api.herokuapp.com/api/v1/tiles</p>
+    </div>
+    <p> Individual tiles can be accessed by their id: </p>
+    <div class="center">
+    <p class="address">https://carcacodeclan-tile-api.herokuapp.com/api/v1/tiles/13</p>
+    </div>
+    <p> Built using Ruby, Sinatra, and PostgreSQL.</p>
+    </section>
+
+    <section id="example-data">
+    <h2> Individual Response Example </h2>
+    <p class="code">
+    { <br>
+    &emsp; "id": 13, <br>
+    &emsp; "sides": [ <br>
+    &emsp; &emsp; "castle", <br>
+    &emsp; &emsp; "castle", <br>
+    &emsp; &emsp; "road", <br>
+    &emsp; &emsp; "castle" <br>
+    &emsp; ],<br>
+    &emsp; "centre": "", <br>
+    &emsp; "hasJunction": true, <br>
+    &emsp; "hasShield": true, <br>
+    &emsp; "imageURL": "https://carcacodeclan-tile-api.herokuapp.com/assets/castle3_road_shield.jpg" <br>
+    }
+    </p>
+    </section>
+
+    <section id="tile-structure">
+    <h2>Tile Structure</h2>
+    <p>The tiles have an array of <b>sides</b> structured <b>[top, right, bottom, left]</b> to allow tile placement logic and rotation to occur. </p> <br>
+
+    <p>Each tile has a <b>centre</b> attribute which is mostly left empty. In the base game it is used for denoting a tile containing a monastery. </p> <br>
+
+    <p><b>hasJunction</b> and <b>hasShield</b> can be used for scoring. They determine whether a road is terminated or a castle contains a shield. </p> <br>
+
+    <p><b>imageURL</b> contains a link to the tiles image for use in the game. </p> <br>
+    </section>
+
+    <section id="tile">
+        <img class="tile-image" src="./assets//castle3_road_shield.jpg" alt="Example tile, castle with 3 roads"/>
+    </section>
+
+</main>
+<%# 
+
+
+<img src="./public/readme_images/API_output.png" height="600" alt="Example Output showing data structure and unique tiles" /> 
+
+### Tile Structure
+
+<img src="./public/readme_images/castle3_road_shield.jpg" height="200" alt="Example tile, castle with 3 roads" style="margin: 0 10px 10px 0" align="left"/>
+
+
+
+```JSON
+{
+	"id": 13,
+	"sides": [
+		"castle",
+		"castle",
+		"road",
+		"castle"
+	],
+	"centre": "",
+	"hasJunction": true,
+	"hasShield": true,
+	"imageURL": "https://carcacodeclan-tile-api.herokuapp.com/assets/castle3_road_shield.jpg"
+}
+```
+%>

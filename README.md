@@ -2,13 +2,12 @@
 
 [This project is hosted on Heroku](https://carcacodeclan-tile-api.herokuapp.com/api/v1/tiles)
 
-We built this API to host and share the game tiles created for our Vue.js [Carcassonne clone](https://carcacodeclan.netlify.com). The github repo for that project can be found [here](https://www.github.com/fmkeir/CarcaCodeClan).
-
+This API was created to host and share the game tiles created for the Vue.js game: [Carcassonne clone](https://carcacodeclan.netlify.com). The github repo for that project can be found [here](https://www.github.com/fmkeir/CarcaCodeClan).
 
 The API was built with Ruby, Sinatra, and PostgreSQL using RESTful routes (GET and SHOW). The tiles are added to the database using a server side seeds file. Shown below is the output for a GET request containing the 72 tiles in the base game with a few example tiles.
 
 
-<img src="./public/readme_images/API_output.png" height="600" alt="Example Output showing data structure and unique tiles" />
+<img src="./public/readme_images/API_output.png" height="600" alt="Example Output showing data structure and unique tiles" /> 
 
 ### Getting started
 
@@ -35,7 +34,7 @@ ruby server.rb
 
 The tiles have an array of sides structured [top, right, bottom, left] to allow tile placement logic and rotation to occur.
 
-Each tile has a centre attribute which is mostly left empty. In the base game in it used for denoting a tile containing a monastery.
+Each tile has a centre attribute which is mostly left empty. In the base game it is used for denoting a tile containing a monastery.
 
 hasJunction and hasShield can be used for scoring. Determines whether a road is terminated or a castle contains a shield.
 

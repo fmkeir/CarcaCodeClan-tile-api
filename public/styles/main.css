@@ -1,0 +1,82 @@
+html {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+nav {
+    width: 100%;
+    height: 2.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 0.5rem rgb(87, 85, 85),
+                0 0 0.25rem rgb(35, 226, 99);
+    text-align: center;
+    padding: 0.75rem 0;
+}
+  
+nav a {
+    font-family: Luminari;
+    text-decoration: none;
+    padding: 2rem;
+    font-size: 25px;
+    color: rgb(48, 47, 47);
+}
+
+nav a:hover {
+    color: rgb(22, 156, 67);
+  }
+
+main {
+    width: 100%;
+    position: fixed;
+    top: 4rem;
+    color: rgb(48, 47, 47);
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+}
+
+h2 {
+    text-align: center;
+    font-family: luminari;
+}
+
+p {
+    margin: 0 2rem;
+}
+
+p.code {
+    font-family: monospace;
+    font-weight: bolder;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+p.address {
+    text-align: center;
+    font-weight: bold;
+    background-color: darkgrey;
+    padding: .5rem 1rem;
+    margin: 1rem 0.5rem;
+    white-space: nowrap;
+    overflow-x: scroll;
+    max-width: 25rem;
+}
+
+section#tile, div.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img.tile-image {
+    height: 200px;
+} 
+
+/* @media (prefers-color-scheme: dark) {
+    nav a {
+        color: red;
+    }
+} */
