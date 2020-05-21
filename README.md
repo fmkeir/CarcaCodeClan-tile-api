@@ -1,6 +1,6 @@
 ## CarcaCodeClan Tile API
 
-[This project is hosted on Heroku](https://carcacodeclan-tile-api.herokuapp.com/api/v1/tiles)
+[This project is hosted on Heroku](https://carcacodeclan-tile-api.herokuapp.com)
 
 This API was created to host and share the game tiles created for the Vue.js game: [Carcassonne clone](https://carcacodeclan.netlify.com). The github repo for that project can be found [here](https://www.github.com/fmkeir/CarcaCodeClan).
 
@@ -36,9 +36,9 @@ The tiles have an array of sides structured [top, right, bottom, left] to allow 
 
 Each tile has a centre attribute which is mostly left empty. In the base game it is used for denoting a tile containing a monastery.
 
-hasJunction and hasShield can be used for scoring. Determines whether a road is terminated or a castle contains a shield.
+hasJunction and hasShield can be used for scoring. They determine whether a road is terminated or a castle contains a shield.
 
-imageURL contains a link to a hosted image for use in the game.
+imageURL contains a link to the tile's image for use in the game.
 
 ```JSON
 {
@@ -54,6 +54,16 @@ imageURL contains a link to a hosted image for use in the game.
 	"hasShield": true,
 	"imageURL": "https://carcacodeclan-tile-api.herokuapp.com/assets/castle3_road_shield.jpg"
 }
+```
+
+### Automatic dark mode
+
+<img src="./public/readme_images/light_dark_mode.png" height="400" alt="Light mode vs. Dark mode"/>
+
+The homepage of the API is available in light and dark modes. The styling uses a media query to detect the preferred display mode of the user.
+
+```css
+@media (prefers-color-scheme: dark) {  }
 ```
 
 ### Interesting code snippets
@@ -105,7 +115,7 @@ class TileSchema
     return self.format(tile).to_json
   end
 
-  def self.dump_all(tiles)
+  def self.dumps(tiles)
     results = tiles.map {|tile| self.format tile}
     return results.to_json
   end

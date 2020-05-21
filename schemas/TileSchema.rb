@@ -14,7 +14,7 @@ class TileSchema
     return self.format(tile).to_json
   end
 
-  def self.dump_all(tiles)
+  def self.dumps(tiles)
     results = tiles.map {|tile| self.format tile}
     return results.to_json
   end
