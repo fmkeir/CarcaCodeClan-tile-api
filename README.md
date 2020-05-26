@@ -1,8 +1,8 @@
 ## CarcaCodeClan Tile API
 
-[This project is hosted on Heroku](https://carcacodeclan-tile-api.herokuapp.com)
+[Check out the API](https://carcacodeclan-tile-api.fraserkeir.com)
 
-This API was created to host and share the game tiles created for the Vue.js game: [Carcassonne clone](https://carcacodeclan.netlify.com). The github repo for that project can be found [here](https://www.github.com/fmkeir/CarcaCodeClan).
+This API was created to host and share the game tiles created for the Vue.js game: [Carcassonne clone](https://carcacodeclan.fraserkeir.com). The github repo for that project can be found [here](https://www.github.com/fmkeir/CarcaCodeClan).
 
 The API was built with Ruby, Sinatra, and PostgreSQL using RESTful routes (GET and SHOW). The tiles are added to the database using a server side seeds file. Shown below is the output for a GET request containing the 72 tiles in the base game with a few example tiles.
 
@@ -52,7 +52,7 @@ imageURL contains a link to the tile's image for use in the game.
 	"centre": "",
 	"hasJunction": true,
 	"hasShield": true,
-	"imageURL": "https://carcacodeclan-tile-api.herokuapp.com/assets/castle3_road_shield.jpg"
+	"imageURL": "https://carcacodeclan-tile-api.fraserkeir.com/assets/castle3_road_shield.jpg"
 }
 ```
 
@@ -91,7 +91,7 @@ tile0 = Tile.new({
   "centre" => "monastery",
   "has_junction" => true,
   "has_shield" => false,
-  "image_url" => "https://carcacodeclan-tile-api.herokuapp.com/assets/monastery.jpg"
+  "image_url" => "https://carcacodeclan-tile-api.fraserkeir.com/assets/monastery.jpg"
   })
 tile0.recurring_save 4
 ```

@@ -1,7 +1,7 @@
 
 <nav>
     <a href="/api/v1/tiles">Tiles</a>
-    <a href="https://carcacodeclan.netlify.app/">CarcaCodeClan game</a>
+    <a href="https://carcacodeclan.fraserkeir.com/">CarcaCodeClan game</a>
     <a href="https://github.com/fmkeir/CarcaCodeClan_tile_api">API Github</a>
     <a href="https://github.com/fmkeir/CarcaCodeClan">Game Github</a>
 </nav>
@@ -12,11 +12,11 @@
     <p> An API to get details and images of the tiles from the base game of Carcassonne. </p><br>
     <p>All 72 tiles are included as individual tiles and can be fetched using: </p>
     <div class="center">
-    <p class="address">https://carcacodeclan-tile-api.herokuapp.com/api/v1/tiles</p>
+    <p class="address">https://carcacodeclan-tile-api.fraserkeir.com/api/v1/tiles</p>
     </div>
     <p> Individual tiles can be accessed by their id: </p>
     <div class="center">
-    <p class="address">https://carcacodeclan-tile-api.herokuapp.com/api/v1/tiles/13</p>
+    <p class="address">https://carcacodeclan-tile-api.fraserkeir.com/api/v1/tiles/13</p>
     </div>
     <p> Built using Ruby, Sinatra, and PostgreSQL.</p>
     </section>
@@ -35,7 +35,7 @@
     &emsp; "centre": "", <br>
     &emsp; "hasJunction": true, <br>
     &emsp; "hasShield": true, <br>
-    &emsp; "imageURL": "https://carcacodeclan-tile-api.herokuapp.com/assets/castle3_road_shield.jpg" <br>
+    &emsp; "imageURL": "https://carcacodeclan-tile-api.fraserkeir.com/assets/castle3_road_shield.jpg" <br>
     }
     </p>
     </section>
@@ -56,30 +56,3 @@
     </section>
 
 </main>
-<%# 
-
-
-<img src="./public/readme_images/API_output.png" height="600" alt="Example Output showing data structure and unique tiles" /> 
-
-### Tile Structure
-
-<img src="./public/readme_images/castle3_road_shield.jpg" height="200" alt="Example tile, castle with 3 roads" style="margin: 0 10px 10px 0" align="left"/>
-
-
-
-```JSON
-{
-	"id": 13,
-	"sides": [
-		"castle",
-		"castle",
-		"road",
-		"castle"
-	],
-	"centre": "",
-	"hasJunction": true,
-	"hasShield": true,
-	"imageURL": "https://carcacodeclan-tile-api.herokuapp.com/assets/castle3_road_shield.jpg"
-}
-```
-%>
