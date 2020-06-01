@@ -58,7 +58,7 @@ imageURL contains a link to the tile's image for use in the game.
 
 ### Automatic dark mode
 
-<img src="./public/readme_images/light_dark_mode.png" height="400" alt="Light mode vs. Dark mode"/>
+<img src="./public/readme_images/light_dark_mode.png" height="300" alt="Light mode vs. Dark mode"/>
 
 The homepage of the API is available in light and dark modes. The styling uses a media query to detect the preferred display mode of the user.
 
