@@ -5,7 +5,8 @@ require_relative './controllers/tile_controller_v1.rb'
 also_reload 'models/*'
 
 configure do
-  enable :cross_origin
+  enable :cross_origins
+  set :bind, '0.0.0.0'
 end
 
 before do

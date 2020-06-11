@@ -12,7 +12,11 @@ class SqlRunner
         password: uri.password
       }
     else
-      database_config = {host: "localhost", dbname: "tiles"}
+      database_config = {
+        host: "postgres",
+        dbname: "postgres",
+        user: "postgres",
+        password: "password"}
     end
     begin
       db = PG.connect(database_config)
